@@ -1,10 +1,12 @@
+//illustrating case sensitivity
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-int Main()
+int main()
 {
-  STRING s = "Goodbye, cruel world!";
-  cOut << S << '\n';
+  string s = "Goodbye, cruel world!";
+  cout << s << '\n';
 }
