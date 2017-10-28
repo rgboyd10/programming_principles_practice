@@ -6,9 +6,13 @@ using namespace std;
 
 int main()
 {
+  //declare variables
+  string first_name;
+  string friend_name;
+
   //read and write a first name
   cout << "Please enter the first name of the person you want to write to (followed by 'enter'):\n";
-  string first_name;
+ 
   cin >> first_name;
-  cout << "Dear " << first_name << ",\n";
+  cout << "Dear " << first_name << ",\n Have you seen " << friend_name << "lately?" ;
 }
