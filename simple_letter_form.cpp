@@ -2,8 +2,6 @@
 Write a program that produces a simple form letter based on user input.
 */
 #include <iostream>
-#include "std_lib_facilities.h"
-//fix ^ file https://groups.google.com/forum/#!topic/ppp-public/C_l3pgnb6Dg
   
 using namespace std;
 
@@ -41,7 +39,7 @@ int main()
 
   if(age <= 0 || age >= 110)
     {
-      simple_error("You're kidding!\n");
+      cout << "You're kidding!\n"; //std_lib_facilities compiliation error needs to be fixed.
     }
   
   cout << "I hear you just had a birthday and you are " << age << " years old.\n";
@@ -59,5 +57,5 @@ int main()
       cout << "I hope you are enjoying retirement.";
     }
 
-  cout << "Yours sincerely,\n\n Russell ";
+  cout << "Yours sincerely,\n Russell ";
 }
