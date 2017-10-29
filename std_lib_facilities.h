@@ -28,11 +28,11 @@
 //------------------------------------------------------------------------------
 
 #ifdef _MSC_VER
-#include <hash_map>
-using stdext::hash_map;
+#include <unordered_map>
+using stdext::unordered_map;
 #else
-#include <ext/hash_map>
-using __gnu_cxx::hash_map;
+#include </usr/include/c++/5/unordered_map>
+using __gnu_cxx::unordered_map;
 
 namespace __gnu_cxx {
 
@@ -49,7 +49,7 @@ namespace __gnu_cxx {
 
 //------------------------------------------------------------------------------
 
-#define unordered_map hash_map
+#define unordered_map unordered_map
 
 //------------------------------------------------------------------------------
 
