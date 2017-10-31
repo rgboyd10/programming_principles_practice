@@ -38,34 +38,55 @@ int - 4 bytes
 double - 8 bytes
 
 13. What measures do we use for the size of small entities in memory, such as int s and string s?
-
+bytes
 
 14. What is the difference between = and == ?
+= is an assignment operator used when assigning a value to a variable and == is used with comparing two variables.
 
 15. What is a definition?
+A definition is a declaration that sets aside memory for an object.
 
 16. What is an initialization and how does it differ from an assignment?
+Initialization of a variable is when you declare the variable.  Assignment is when you give the variable a value.
 
 17. What is string concatenation and how do you make it work in C++?
+A string concatenation is when you join two strings together and an example would be:
+string a = "This is string a";
+string b = ", and this is string b.";
+string c = a + b;
+cout << c; 
 
 18. Which of the following are legal names in C++? If a name is not legal, why not?
 
- This_little_pig
- This_1_is fine
- 2_For_1_special
- latest thing
- the_$12_method
- _this_is_ok
- MiniMineMine
- number
- correct?
+ This_little_pig - legal
+ This_1_is fine - not legal because of the space
+ 2_For_1_special - legal 
+ latest thing - not legal because of the space
+ the_$12_method - legal
+ _this_is_ok - legal
+ MiniMineMine - legal
+ number - legal
+ correct? - legal
 
 19. Give five examples of legal names that you shouldn’t use because they are likely to cause confusion.
+string
+x1
+ThisisareallylongnameImightsay
+one
+wHy
 
 20. What are some good rules for choosing names?
+Don't use overly long names.
+Use underscores to separate words in an identifier.
+Don't use all capital letters.
+Avoid names that are easy to mistype, misread, or confuse.
 
 21. What is type safety and why is it important?
+When objects are used according to the rules of it's type.
 
 22. Why can conversion from double to int be a bad thing?
+When you are converting a double that is too large to fit into an int.
 
 23. Define a rule to help decide if a conversion from one type to another is safe of unsafe?
+Run the program with a variety of inputs, large, small, negative, non-integers.
+
