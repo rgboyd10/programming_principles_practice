@@ -21,16 +21,24 @@ EOF (CTRL-D)
 cout << "Hello, " << first_name << "!\n";
 
 8. What is an object?
+An object is some memory that holds a value of a given type.
 
 9. What is a literal?
+A sequence of characters from the source character set encloded in double quotes.
 
 10. What kinds of literals are there?
+String and character and I'm sure more that I haven't learned about.
 
 11. What is a variable?
+A variable is a named object.
 
 12. What are typical sizes for a char , an int , and a double ?
+char - 1 byte
+int - 4 bytes
+double - 8 bytes
 
 13. What measures do we use for the size of small entities in memory, such as int s and string s?
+
 
 14. What is the difference between = and == ?
 
