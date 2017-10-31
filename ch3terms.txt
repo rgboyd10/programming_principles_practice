@@ -1,0 +1,20 @@
+Chapter 3 Terms
+
+assignment - the assignment operator is =.  It is not an equality operator.  It can be used for non-const, built in types(except arrays), enumerations, strings, containers, iterators, complex, and valarray.  For a class, = is by default defined member wide assignment; if necessary, the writers of a class can define it differently.
+cin - standard istream.
+concatenation - when you join to variables together.
+conversion - explicit type conversion or implicit type conversion.
+declaration - an introdction of a name into a scope.  The type of the name must be specified. If the declaration also specifies the entity to which the name refers, the declaration is also a definition.
+decrement - to decrease a value by 1.
+definition - a declaratin that specifies the entity to which the declared name refers.
+increment - to increase by 1.
+initialization - giving an object an initial value.  This differs from assignment in that there is no previous value involved.  Initialization is one by constructors.
+name - a sequence of letters and digits started by a letter, used to identify "name" user-defined entities in program text.  An underscore is considered a letter.  Names are case sensitive.  The standard imposes no upper limit on the length of names.
+narrowing - when a type conversion happens going from a variable of a greater size to a smaller size like double to int.
+object - a contiguous region of memory holding a value of some type.  A named or unnamed variable of some type; and object of a type with a constructor is not considered an object before the constructor has completed and is no longer considered an object once a destructor has started executing for it.  Objects can be allocated in static memory, on the stack, or on the free store.
+operation - different actions that can be performed on a variable.
+operator - conventional notation for built-in operation, such as +, * and &. A programmer can define meanings for operators for user defined types.
+type - a built in type or a user defined type.  A type defines the proper use of a name or an expression.
+type safety - The property that an object can be accessed only according to its definition.  C++ approximates this ideal.  A programmer can violate type safety by explicitly use a cast, by using an uninitialized variable, by using a pointer that doesn't point to an object, by accessing beyond the end of an array, and by misuing a union.  For low level systems code, it can be necessary to violate type safety (to write out the byte representation of some objects), but generally type safety must be preserved for a program to be correct and maintainable.
+value - the bits of an object interpreted according the objects type.
+variable - named object in a scope.
