@@ -15,20 +15,22 @@ int main()
   int maximum;
   int minimum;
   int middle;
+  int tmp;
   vector <int> nums;
   
   cout << "Please enter three integer values, each followed by 'enter'.";
   cin >> val1 >> val2 >> val3;
 
-  maximum = max(val1, val2, val3);
-  minimum = min(val1, val2, val3);
-
-  for(int x = 0; x < nums.size(); x++)
-    {
-      if(nums[x] <= nums[x-1]
-	{
-	  minimum = nums[x];
-	}
-    }
+  nums[0] = val1;
+  nums[1] = val2;
+  nums[2] = val3;
   
+  for(int x = 0; x <= nums.size(); x++)
+    {
+      if(numx[x]
+    }
+
+      cout << "Minimum is : " << minimum << ".\n" ;
+      cout << "Middle is : " << middle << ".\n" ;
+      cout << "Maximum is : " << maximum << ".\n" ;
 }
