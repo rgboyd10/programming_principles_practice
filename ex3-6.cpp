@@ -9,28 +9,25 @@ using namespace std;
 
 int main()
 {
+  //declare the variables
   int val1;
   int val2;
   int val3;
-  int maximum;
-  int minimum;
-  int middle;
-  int tmp;
   vector <int> nums;
-  
+
+  //prompt the user to input data
   cout << "Please enter three integer values, each followed by 'enter'.";
   cin >> val1 >> val2 >> val3;
 
-  nums[0] = val1;
-  nums[1] = val2;
-  nums[2] = val3;
-  
-  for(int x = 0; x <= nums.size(); x++)
-    {
-      if(numx[x]
-    }
+  //
+  nums.push_back(val1);
+  nums.push_back(val2);
+  nums.push_back(val3);
 
-      cout << "Minimum is : " << minimum << ".\n" ;
-      cout << "Middle is : " << middle << ".\n" ;
-      cout << "Maximum is : " << maximum << ".\n" ;
+  sort(nums.begin(), nums.end());
+
+  for(int x = 0; x < nums.size(); x++)
+    {
+      cout << nums[x] << ".\n";
+    }
 }
