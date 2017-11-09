@@ -39,14 +39,25 @@ int main()
 
   //calculate the value of the total cents and converted
   total_cents = pennies + nickels * 5 + dimes * 10 + quarters * 25 + half_dollars * 50;
-  total_cents_converted = total_cents * .01
+  total_cents_converted = total_cents * .01;
     
   //output the results
-  cout << "You have " << pennies <<  "pennies.\n"
-       << "You have " << nickels <<  "nickels.\n"
-       << "You have " << dimes <<  "dimes.\n"
-       << "You have " << quarters <<  "quarters.\n"
-       << "You have " << half_dollars <<  "half dollars.\n"
-       << "The value of all your coins is " << total_cents << "cents or $" << total_cents_converted << ".\n";
-  
+
+  if(pennies == 1) cout << "You have " << pennies <<  " penny.\n";
+  else cout << "You have " << pennies <<  " pennies.\n";
+
+  if(nickels == 1) cout << "You have " << nickels <<  " nickel.\n";
+  else cout << "You have " << nickels <<  " nickels.\n";
+
+  if(dimes == 1) cout << "You have " << dimes <<  " dime.\n";
+  else cout << "You have " << dimes <<  " dimes.\n";
+
+  if(quarters == 1) cout << "You have " << quarters <<  " quarter.\n";
+  else cout << "You have " << quarters <<  " quarters.\n";
+
+  if(half_dollars == 1) cout << "You have " << half_dollars <<  " half dollar.\n";
+  else cout << "You have " << half_dollars <<  " half dollars.\n";
+
+  if(total_cents == 1) cout << "The value of all your coins is " << total_cents << " cent or $" << total_cents_converted << ".\n";
+  else cout << "The value of all your coins is " << total_cents << " cents or $" << total_cents_converted << ".\n";
 }
