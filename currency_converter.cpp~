@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  //declare variables
+  const double dollar = 1.0;
+  const double yen = 113.58 * dollar;
+  const double kroner = 6.38 * dollar;
+  const double pound = 0.76 * dollar;
+  char currency_choice;
+  double amount;
+  
+  //prompt the user
+  cout << "What would you like to convert to US dollars today?  Please enter one of the following followed by 'enter'.\ny\nk\np";
+  cin >> currency_choice;
+
+  cout << "How much " << currency_choice << " would you like to convert?\n";
+  cin >> amount;
+
+  switch(currency_choice)
+    {
+    case 'y':
+      cout << amount << " " << currency_choice << " = " << yen << ".\n";
+      break;
+    case 'k':
+      cout << amount << " " << currency_choice << " = " << kroner << ".\n";
+      break;
+    case 'p':
+      cout << amount << " " << currency_choice << " = " << pound << ".\n";
+      break;
+    default:
+      cout << "Sorry, that was not an option.\n";
+      break;
+    }
+}
