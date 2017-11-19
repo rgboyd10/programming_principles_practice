@@ -11,12 +11,21 @@ int main()
     {
       cout << "Please enter two integers, each followed by 'enter'.  If you enter |, the program will end.\n";
       cin >> userin1 >> userin2;
+
       if(userin1 == '|' || userin2 == '|')
 	{
 	  cout << "You have entered a pipe.  The program will now end.";
 	  break;
-	  }
-      cout << userin1 << "\t" << userin2 << "\n";
+	}
+
+      if(userin1 > userin2)
+	{
+	  cout << "The smaller value is " << userin2 << ".\n The larger value is " << userin1 << ".\n";
+	}
+      else
+	{
+	  cout << "The smaller value is " << userin1 << ".\n The larger value is " << userin2 << ".\n"; 
+	}
+      
     }
-  return 0;
 }
