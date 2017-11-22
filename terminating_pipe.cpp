@@ -4,24 +4,22 @@ using namespace std;
 
 int main()
 {
-  double userin1;
-  double userin2;
+  double max;
+  double min;
   
   while(cin != "|")
     {
       cout << "Please enter two integers, each followed by 'enter'.  If you enter |, the program will end.\n";
       
-      cin >> userin1;
+      cin >> max;
       
-      cin >> userin2;
-      
-      if(userin1 > userin2)
+      if(max > min)
 	{
-	  cout << "The smaller value is " << userin2 << ".\n The larger value is " << userin1 << ".\n";
+	  cout << "The larger value is " << max << ".\n The smaller value is " << min << ".\n";
 	}
-      else if(userin2 > userin1)
+      else if(min > max)
 	{
-	  cout << "The smaller value is " << userin1 << ".\n The larger value is " << userin2 << ".\n"; 
+	  cout << "The larger value is " << min << ".\n The smaller value is " << max << ".\n";
 	}
       else if(userin2 == userin1)
 	{
