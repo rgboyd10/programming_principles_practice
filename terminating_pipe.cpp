@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-  int userin1;
-  int userin2;
+  double userin1;
+  double userin2;
   
   while(cin != "|")
     {
@@ -23,9 +23,14 @@ int main()
 	{
 	  cout << "The smaller value is " << userin1 << ".\n The larger value is " << userin2 << ".\n"; 
 	}
-      else
+      else if(userin2 == userin1)
 	{
-	  cout << "The values " << userin1 << " and " << userin2 << " are the same.";
+	  cout << "The values " << userin1 << " and " << userin2 << " are the same.\n";
+	}
+
+      if(userin2 - userin1 < 1.0 || userin1 - userin2 < 1.0)
+	{
+	  cout << "The numbers are almost equal.\n";
 	}
     }
   
