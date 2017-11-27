@@ -6,27 +6,36 @@ int main()
 {
   double max;
   double min;
+  double mToCm = 100.00;
+  double inToCm = 2.54;
+  double ftToIn = 12.00;
+  string maxUnit;
+  string minUnit;
   
   while(cin != "|")
     {
-      cout << "Please enter two integers, each followed by 'enter'.  If you enter |, the program will end.\n";
+      cout << "Please enter two doubles, each followed by a unit of measurement such as cm, in, ft, or m.  After each double and unit of measurement, please hit 'enter'.  If you enter |, the program will end.\n";
       
-      cin >> max;
-      
-      if(max > min)
+      cin >> max >> maxUnit >> min >>  minUnit;
+
+      if(maxUnit != "cm" || maxUnit != "in" || maxUnit != "ft" || maxUnit != "m" || minUnit != "cm" || minUnit != "in" || minUnit != "ft" || minUnit != "m")
 	{
-	  cout << "The larger value is " << max << ".\n The smaller value is " << min << ".\n";
+	  cout << "That is an invalid unit of measurement.  Please enter cm, in , ft, or m next time.\n";
+	}
+
+      else if(max > min)
+	{
+	  cout << "The larger value is " << max << " " << maxUnit << ".\n The smaller value is " << min  << " " << minUnit << ".\n";
 	}
       else if(min > max)
 	{
-	  cout << "The larger value is " << min << ".\n The smaller value is " << max << ".\n";
+	  cout << "The larger value is " << min << " " << minUnit << ".\n The smaller value is " << max << " " << maxUnit << ".\n";
 	}
-      else if(userin2 == userin1)
+      else if(max == min)
 	{
-	  cout << "The values " << userin1 << " and " << userin2 << " are the same.\n";
+	  cout << "The values " << min << " " << minUnit <<  " and " << max << " " << maxUnit << " are the same.\n";
 	}
-
-      if(userin2 - userin1 < 1.0 || userin1 - userin2 < 1.0)
+      else if(max - min < 1.0 || min - max < 1.0)
 	{
 	  cout << "The numbers are almost equal.\n";
 	}
