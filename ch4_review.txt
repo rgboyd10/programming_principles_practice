@@ -81,3 +81,24 @@
 23. What is the index of the third element of a vector ?
     vector <string> bob;
     bob[2];
+
+
+24. How do you write a for -loop that prints every element of a vector ?
+    vector <int> examples;
+    for(int x = 0; x < examples.size(); x++)
+    {cout << examples[x];}
+
+25. What does vector<char> alphabet(26); do?
+    Declares a character vector named alphabet of size 26.
+
+26. Describe what push_back() does to a vector.
+    push_back() adds elements to a vector and pushes them back in order.
+
+27. What does vector ’s member size() do?
+    Shows the size of the vector.
+
+28. What makes vector so popular/useful?
+    You don't have to declare a size and you can add as many elements as you like.
+
+29. How do you sort the elements of a vector ?
+    call the sort(vector.begin(), vector.end()) function.
