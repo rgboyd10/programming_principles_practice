@@ -26,7 +26,7 @@ int main()
       countNums++;
       countNums++;
       
-      if(maxUnit != "cm" || maxUnit != "in" || maxUnit != "ft" || maxUnit != "m" || minUnit != "cm" || minUnit != "in" || minUnit != "ft" || minUnit != "m")
+      if(maxUnit == "" || maxUnit == "y" || maxUnit == "yard" || maxUnit == "meter" || maxUnit == "km" || maxUnit == "gallons" || minUnit == "" || minUnit == "y" || minUnit == "yard" || minUnit == "meter" || minUnit == "km" || minUnit == "gallons")
 	{
 	  cout << "That is an invalid unit of measurement.  Please enter cm, in , ft, or m next time.\n";
 	}
@@ -50,7 +50,7 @@ int main()
 	  if(maxUnit == "in") sum += max * inToM;
 	  if(maxUnit == "ft") sum += max * ftToM;
 	}
-      else if(max == min)
+      else if(max == min && minUnit == maxUnit)
 	{
 	  cout << "The values " << min << " " << minUnit <<  " and " << max << " " << maxUnit << " are the same.\n";
 	  if(minUnit == "cm") sum += min * cmToM;

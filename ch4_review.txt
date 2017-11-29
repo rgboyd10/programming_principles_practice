@@ -1,0 +1,62 @@
+1. What is a computation?
+   The act of producing some outputs based on some inputs.
+
+2. What do we mean by inputs and outputs to a computation? Give examples.
+   When you give inputs to a function, that function performs a computation and provides outputs.
+
+3. What are the three requirements a programmer should keep in mind when expressing computations?
+   Correctness
+   Simplicity
+   Efficiency
+
+4. What does an expression do?
+   An expression is a computation usually yielding a value or deposing its result in an object.
+
+5. What is the difference between a statement and an expression, as described in this chapter?
+   A statement is a basic unit of a program controlling the execution flow in a function, such as if-statement, for statement, expression statement and declaration. An expression is a computation usually yielding a value or deposing its result in an object.
+   
+6. What is an lvalue? List the operators that require an lvalue. Why do these operators, and not the others, require an lvalue?
+   An lvalue is the object named by length. An lval is the value that can appear on the left hand side of an assignment. Operators that require an lvalue are the increment and decrement operators. They require an lvalue because you cannot assign an rvalue. 
+
+7. What is a constant expression?
+   An expression that cannot be given a new value once named.
+
+8. What is a literal?
+   A notation that directly specifies a value, such as 12 directly specifying the integer value 12.
+   
+9. What is a symbolic constant and why do we use them?
+   A named object to which you cannot give a new value once it has been initialized.
+   
+10. What is a magic constant? Give examples.
+    Non-obvious literals in code. Examples are numbers like 1, 2, or 5.
+    
+11. What are some operators that we can use for integers and floating-point values?
+    >,<,+,=,-
+    
+12. What operators can be used on integers but not on floating-point numbers?
+    The increment and decrement operators.
+    
+13. What are some operators that can be used for string s?
+    << or >>
+    
+14. When would a programmer prefer a switch -statement to an if -statement?
+    Use a switch statement when you are making a comparison to several constant values.
+    
+15. What are some common problems with switch -statements?
+    Forgetting to terminate with a break statement.
+    
+16. What is the function of each part of the header line in a for -loop, and in what sequence are they executed?
+    for(int x = 0; x < 10; x++)
+    int x = 0 is the initial iterator that you are declaring.
+    x < 10 show what you are iterating through as well as the range that you are iterating through.
+    x++ actually performs the iteration.
+    
+17. When should the for -loop be used and when should the while -loop be used?
+    Use for loop when you need to see a simple initializer, condition,  and increment operation.  Use a while loop for any other situations.
+    
+18. How do you print the numeric value of a char ?
+19. Describe what the line char foo(int x) means in a function definition.
+20. When should you define a separate function for part of a program? List reasons.
+21. What can you do to an int that you cannot do to a string ?
+22. What can you do to a string that you cannot do to an int ?
+23. What is the index of the third element of a vector ?
