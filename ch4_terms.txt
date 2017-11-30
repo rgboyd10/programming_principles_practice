@@ -1,1 +1,57 @@
-abstraction - 
+abstraction - the act of specifying a general interface hiding implementation details.  classess, abstact classes, and templates are the primary abstraction mechanisms in c++.
+
+computation - an action that is performed by a function as a result of taking in inputs.  Computations produce outputs.
+
+conditional statement - an example of a conditinal statement is an if statement.
+
+declaration -function declarations consist of a return value, function name and list of parameters that the function accepts.
+
+definition - the first line of a program.
+
+divide and conquer - Taking a large problem and dividing it into several little ones.
+
+else - the second part of an if-else statement.  The next step to be taken if the condition of an if statement fails.
+
+expression - computes a value from a set of operands using operators.
+
+for-statement - like a while statement, except that the management of the control variable is concentrated at the top where it is easy to see and understand.
+
+range-for-statement -
+
+function -
+
+if-statement -
+
+increment -
+
+input -
+
+iteration -
+
+loop -
+
+lvalue -
+
+member function -
+
+output -
+
+push_back() -
+
+repetition -
+
+rvalue -
+
+selection -
+
+size() -
+
+sort() -
+
+statement -
+
+switch-statement -
+
+vector -
+
+while - statement - 
