@@ -16,21 +16,24 @@ expression - computes a value from a set of operands using operators.
 
 for-statement - like a while statement, except that the management of the control variable is concentrated at the top where it is easy to see and understand.
 
-range-for-statement -
+range-for-statement - denoted as [0:v.size()) for a vector v. It's called this because the word range is often used to mean the same as "sequence of elements." for(int x; v) as "for each int x in v, and the meaning of the loop is exactly like the equivalent loop over the subscripts [0:v.size()).  We use the range for loop for simple loops over all the elements of a sequence looking at one element at a time. 
 
-function -
+function - should perform a single logical action.
 
-if-statement -
+if-statement - selects between two alternatives.  If its condition is true, the first statement is executed; otherwise, the second statement is.  
 
-increment -
+increment - can be expressed in at least three ways.
+++a
+a+=1
+a=a+1
 
-input -
+input - similar to iostream - extensible type-safe input and output framework.
 
-iteration -
+iteration - traversal of data structure, directly or indirectly using an iteration - statement.  The standard library offer algorithms, such as copy(), find(), that can be effective alternatives to explicit iteration.
 
-loop -
+loop - a statement that expresses the notion of doing something zero or more times, such as a for-statement and a while statement.
 
-lvalue -
+lvalue - an express that may appear on the left-hand side of an assignment; for example, v[7] if v is an array or a vector.  An lvalue is modifiiable unless it is constant (const).
 
 member function -
 
