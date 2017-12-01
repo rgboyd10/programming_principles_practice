@@ -35,26 +35,30 @@ loop - a statement that expresses the notion of doing something zero or more tim
 
 lvalue - an express that may appear on the left-hand side of an assignment; for example, v[7] if v is an array or a vector.  An lvalue is modifiiable unless it is constant (const).
 
-member function -
+member function - a function declared in the scope of a class.  A member function that is not a static member function must be called for an object of its class.
 
-output -
+output - similar to iostream - extensible type-safe input and output framework.
 
-push_back() -
+push_back() - member function that adds an element at the end of a standard container, such as vector, thereby increasing the container's size by one.
 
-repetition -
+repetition - a convenient way of doing something several times. When you do something to a series of elements of a data structure.
 
-rvalue -
+rvalue - an expression that may appear on the right hand side of an assignment, but not of the left hand side, 7.
 
-selection -
+selection - if statement or a switch statement.
 
-size() -
+size() - calling this function gives the number of elements of a vector.
 
-sort() -
+sort() - standard library algorithm for sorting a random access sequence, such as a vector or an array.
 
-statement -
+statement -the basic unit controlling the execution flow in a function, such as if statement, while statement, do statement, switch statement, expression statement, and declaration.
 
-switch-statement -
+switch-statement - a statement selecting among many alternatives based on an integer value.
 
-vector -
+vector - a standard library template providing contiguous storage, resizing and the useful push_back() functions for adding elements at the end.  Vector is the default container.
 
-while - statement - 
+while - statement - a loop statement presenting its condition "at the top".  For example,
+while(cin >> var)
+{
+	vec.push_back(var);
+}
