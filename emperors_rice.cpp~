@@ -1,0 +1,15 @@
+using namespace std;
+
+int main()
+{
+  //declare variables
+  int squareNum = 1;
+  int grainNum = 1;
+
+  while(squareNum < 64)
+    {
+      cout << squareNum << "\t" << grainNum;
+      grainNum = grainNum * 2;
+      squareNum++;
+    }
+}
