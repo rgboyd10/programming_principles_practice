@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  //declare variables
+  int z = 0;
+  //declare for loop to iterate, calculating primes
+  for(int x = 0; x < 100; x++)
+    {
+      if(z %)
+	z++;
+    }
+}
