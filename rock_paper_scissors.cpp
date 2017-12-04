@@ -1,15 +1,14 @@
 #include <iostream>
-#include <random>
+
 using namespace std;
 
 int main()
 {
   //declare variables
   string userin;
-  vector<string> choices = {"rock", "paper", "scissors"};
-  default_random_engine generator;
-  uniform_int_distribution<int> distribution(0,2);
-  int dice_roll = distribution(generator); // generates a number in the range of 1 and 3
+
+  srand (time(NULL));
+  int dice_roll = rand() % 3 + 1; // generates a number in the range of 1 and 3
   
   //get input from the user
   cout << "Please enter either rock, paper or scissors.\n";
