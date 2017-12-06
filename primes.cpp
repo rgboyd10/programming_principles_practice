@@ -17,7 +17,7 @@ int main()
 	{
 	  if(x % y == 0)
 	    {
-	      primes.erase(primes.begin() + x);
+	      primes.erase(primes.begin() + 1);
 	    }
 	}
     }
